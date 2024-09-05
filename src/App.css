@@ -63,7 +63,7 @@
 }
 
 .middle.isSplit {
-  transform: translateX(-45vw);
+  transform: translateX(-43vw);
 }
 
 .isRelative {
@@ -73,6 +73,24 @@
 .isAbsolute {
   position: absolute;
   top: 40%;
+}
+
+@media screen and (max-width: 1486px) {
+  .isAbsolute {
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .isAbsolute {
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .isAbsolute {
+    top: 70%;
+  }
 }
 
 .section3 {

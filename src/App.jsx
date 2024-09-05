@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
+import { GiAbstract038 } from "react-icons/gi";
+import { GiAbstract027 } from "react-icons/gi";
+import { GiAbstract031 } from "react-icons/gi";
 
 const ScrollLogoAnimation = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -35,9 +38,31 @@ const ScrollLogoAnimation = () => {
       <div className="section1"></div>
       <div className={`section2 ${isAbsolute ? "isRelative" : ""}`}>
         <div className={`logo_container ${isAbsolute ? "isAbsolute" : ""} `}>
-          <div className={`top ${isSplit ? "isSplit" : ""}`}></div>
-          <div className={`middle ${isSplit ? "isSplit" : ""}`}></div>
-          <div className={`bottom ${isSplit ? "isSplit" : ""}`}></div>
+          <div className={`top ${isSplit ? "isSplit" : ""}`}>
+            {" "}
+            <GiAbstract038
+              color="blue"
+              size={100}
+              strokeWidth={5}
+              stroke="black"
+            />
+          </div>
+          <div className={`middle ${isSplit ? "isSplit" : ""}`}>
+            <GiAbstract027
+              color="green"
+              size={100}
+              strokeWidth={5}
+              stroke="black"
+            />
+          </div>
+          <div className={`bottom ${isSplit ? "isSplit" : ""}`}>
+            <GiAbstract031
+              color="red"
+              size={100}
+              strokeWidth={5}
+              stroke="black"
+            />
+          </div>
         </div>
         <div className="frames"></div>
         <div className="frames"></div>
