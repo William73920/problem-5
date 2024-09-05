@@ -43,6 +43,8 @@ const ScrollLogoAnimation = () => {
         <div className="frames"></div>
         <div className="frames"></div>
       </div>
+
+      <div className="section3"></div>
     </div>
   );
 };
